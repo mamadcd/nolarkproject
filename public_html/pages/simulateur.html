@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+
+<head>
+    <title>Simulateur de Salaire</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/simulateur.js" defer=""></script>
+    <link href="../css/simulateur.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <section>
+        <fieldset>
+            <legend>Simulation de Salaire: </legend>
+            <form id="renumForm">
+                <label>Entrez le nombre d'année d'ancienneté:</label>
+                <input type="number" id="nbAncien" required>
+                <label>Entrez la quantité de S20:</label>
+                <input type="number" id="nbS20" required>
+                <label>Entrez la quantité de X-Spirit:</label>
+                <input type="number" id="nbXS" required>
+                <label>Entrez la quantité de Vendue de Multilec:</label>
+                <input type="number" id="nbMulti" required>
+                <div id="affiRenum"></div>
+                <input type="submit" id="btnCalculer" value="Calculer votre rénumération">
+                <input type="reset" value="Effacer les données">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Simulation Primes Transporteurs</legend>
+            <form id="form_prime">
+                <label>Années d'ancienneté:</label>
+                <input type="number" id="t_nbAncien">
+                <label>Nbre d'accidents:</label>
+                <input type="number" id="t_nbAccident">
+                <label>Kilomètres parcouru:</label>
+                <input type="number" id="t_km">
+                <input type="submit" value="Calculer la Prime">
+            </form>
+        </fieldset>
+    </section>
+</body>
+
+</html>

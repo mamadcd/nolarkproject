@@ -1,0 +1,46 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 5 janv. 2023, 15:15:06
+    Author     : mamad
+*/
+fieldset{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 10px 5px rgb(6, 207, 193);
+    border-color: rgb(47, 0, 255);
+
+}
+fieldset:hover{
+    box-shadow: 1px 1px 10px 5px rgb(48, 4, 209);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+input[type="number"]{
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+input[type="submit"]{
+    margin-bottom: 4px;
+}
+input[type="submit"],input[type="reset"]{
+    width: 98%;
+    margin: 2px auto;
+    height: 1.5rem;
+    border:none;
+    border-bottom: 2px;
+    background-color: midnightblue;
+    color: white;
+    border-radius: 3pt;
+    outline: none;
+
+}

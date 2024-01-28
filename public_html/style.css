@@ -1,0 +1,255 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 20 oct. 2022, 11:48:34
+    Author     : Mamadou Seck
+*/
+/*
+    //parties commun:
+
+*/
+* {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /*background: url('../images/banniere.png') no-repeat scroll center 10px;*/
+    height: 295px;
+    width: 100%;
+    align-items: center;
+    background: url('images/banniere.png') no-repeat scroll center 10px;
+}
+
+nav {
+    margin-top: 213px;
+    /*float: left; */
+    /*Remplacé*/
+
+}
+
+nav li {
+    display: inline;
+    font-size: 30px;
+
+}
+
+nav li a {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: black;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: midnightblue;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copyright p {
+    color: gainsboro;
+}
+
+/*fin parties commun*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*header{
+   border-color: blue;    //liberté d'enlever tous ces border ça fait moche'
+    border-style:solid;
+
+}*/
+aside:hover {
+    background-color: gold;
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    align-content: center;
+    /*height: 350px;*/
+    width: 975px;
+    /*margin: 0 270px 0 280px;*/
+    /*le margin foutaise*/
+}
+
+#principal article {
+    padding-top: 10px;
+    width: 72%;
+    /*height: 100px;*/
+    height: auto;
+    /*Le auto lui permet de prendre toute la hauteut dont il a besoin*/
+    text-align: justify;
+    float: left;
+
+}
+
+#principal article img {
+    float: left;
+}
+
+#principal aside {
+    margin-top: 0;
+    background: transparent url('images/post-it-conseils.png') no-repeat 0 0;
+    vertical-align: top;
+    width: 27%;
+    float: right;
+    height: 100%;
+}
+
+#principal aside img:first-child {
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+
+#principal aside img {
+    margin-left: 20px;
+    margin-right: auto;
+    clear: both;
+}
+
+#principal aside p {
+    margin-top: 0;
+    margin-left: 15px;
+
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+#categories h1 {
+    color: red;
+
+}
+
+#categories .differente-categories {
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+#categories .differente-categories article {
+    height: 200px;
+    width: 250px;
+
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url(images/casques/enfants/Commando-Power.jpg) no-repeat top center;
+
+}
+
+#categories .differente-categories article:hover {
+    box-shadow: 1px 1px 1px 2px #bbb;
+}
+
+#categories .differente-categories article a h2 {
+    color: rgb(129, 0, 0);
+}
+
+@media screen and (max-width:500px) {
+
+    /*c'est 480px de base 'Mes navigateurs ne vont pas jusques là !'*/
+    header {
+        background-image: none;
+        width: auto;
+        margin: 0;
+        height:
+            /*160px*/
+            auto;
+
+    }
+
+    nav {
+        margin-top: 0;
+
+    }
+
+    nav ul {
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 0;
+        width: 500px;
+
+
+    }
+
+    nav li a {
+        display: block;
+        margin-top: 1px;
+        height: 30px;
+        padding: 1px;
+        text-align: center;
+    }
+
+    #principal {
+        width: auto;
+        height: auto;
+    }
+
+    #principal article {
+        width: auto;
+        height: 100%;
+        float: none;
+    }
+
+    #principal aside {
+        display: none;
+    }
+
+    #categories {
+        display: none;
+        height: auto;
+        margin: 0 auto 0 auto;
+        width: 100%;
+    }
+
+    #categories #categories-piste,
+    #categories #categories-cross,
+    #categories #categories-route {
+        height: auto;
+        background-image: none;
+        width: 30%;
+        float: left;
+    }
+
+    #categories #categories-enfant article img {
+        visibility: hidden;
+    }
+}

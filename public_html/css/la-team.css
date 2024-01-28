@@ -1,0 +1,64 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 oct. 2022, 22:16:11
+    Author     : mamad
+*/
+* {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /*background: url('../images/banniere.png') no-repeat scroll center 10px;*/
+    height: 295px;
+    align-items: center;
+    background: url('../images/banniere.png') no-repeat scroll center 10px;
+    /*height: 195px;*/
+}
+
+nav {
+    margin-top: 213px;
+
+
+}
+
+nav li {
+    display: inline;
+    font-size: 30px;
+
+}
+
+nav li a {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: black;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: midnightblue;
+    align-items: center;
+    justify-content: center;
+}
+
+/*fin parties commun*/
+
+img {
+    height: 50%;
+    width: 53%;
+
+}

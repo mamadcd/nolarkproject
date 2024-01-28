@@ -1,0 +1,224 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26 oct. 2022, 21:37:04
+    Author     : mamad
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: url('../images/banniere.png') no-repeat scroll center 10px;
+    height: 295px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    margin-top: 200px;
+    /*float: left; */
+    /*Remplacé*/
+
+}
+
+nav li {
+    display: inline;
+    font-size: 30px;
+
+}
+
+nav li a {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: black;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: midnightblue;
+    align-items: center;
+    justify-content: center;
+}
+
+/*reste à s'occuper du 'footer'*/
+
+/******************Fin Style Commun*/
+
+#local {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+
+}
+
+#section-form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#form_contact {
+    box-shadow: 0 1px 2px 3px darkblue;
+    /*margin: 0 340px 0 340px;*/
+    border: 1px solid black;
+    display: inline-flex;
+
+    /*align-items: center;
+    justify-content: center;
+    justify-content: space-around;*/
+    min-height: auto;
+    min-width: 700px;
+    padding: 8px 0 8px 0;
+    margin-bottom: 20px;
+
+}
+
+#motif_contact {
+    margin: auto 5px auto 5px;
+}
+
+#motif_contact,
+#coordo {
+    margin: auto 5px auto 5px;
+}
+
+input[type="email"]:valid,
+input[type="url"]:valid {
+    color: green;
+
+}
+
+/*input[type="email"]:after,
+input[type="url"]:after {
+    color: green;
+    content: "X";
+}*/
+input[type="email"]:invalid,
+input[type="url"]:invalid {
+    color: red;
+
+}
+
+/*#form_contact{
+    border: 2px black solid;
+    display: flex;
+    height: 70vh;
+}
+/*#form_contact{
+    height: 
+}*/
+.coordo_div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#coordo {
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: flex-end;*/
+    min-width: 300px;
+    padding: 5px;
+
+}
+
+.formdivs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.subbmit-reset {
+    padding: 3px;
+    margin: 5px 3px;
+}
+
+.subbmit-reset input {
+    padding: 4px;
+}
+
+#marques {
+    display: inline-flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    height: auto;
+    width: 350px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 9px 9px 9px 0;
+}
+
+#marques div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-bottom: 7px;
+}
+
+#motif_contact {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+
+}
+
+#motif_contact p {
+    margin-top: 20px;
+}
+
+.form_couleur,
+.form_dateNaiss,
+.form_email,
+.form_nom,
+.form_prenom,
+.form_profession,
+.form_url {
+    margin: 5px 0 10px 0;
+
+    border: 0;
+}
+
+#i_email,
+#i_nom,
+#i_prenom,
+#i_url,
+input[type="Date"],
+#lst_typeclient {
+
+    height: 20px;
+
+
+    border-bottom: 2px solid red;
+    border-top: 0;
+    border-color: 2 px solid red;
+}
+
+@media screen and(max-width:700px) {
+    #form_contact {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+}
